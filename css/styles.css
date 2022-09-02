@@ -138,6 +138,21 @@ ul {
 }
 
 /*Main Studio*/
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.benefit-icon-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--team-color);
+  border-radius: 4px;
+}
+
+
 .section-hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -267,6 +282,42 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.socials {
+  display: flex;
+  list-style: none;
+  padding-bottom: 0;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.social {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-txt-cl);
+  border-radius: 50%;
+   fill: red; 
+}
+
+.social:hover,
+.social:focus {
+  background-color: var(--accent-txt-cl);
+  fill: var(--white-txt-cl);
+}
+
+.icon {
+  background-color: #2196f3;
+  width: 20px;
+  height: 20px; 
+}
+/*Постійні клієнти*/
+.section-clients {
+
+}
+
 
 /*Portfolio*/
 .title-portfolio {
