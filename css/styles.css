@@ -59,6 +59,10 @@ ul {
   padding: 0;
 }
 
+.section {
+
+}
+
 /*Header*/
 .header {
   border-bottom: 1px solid #ececec;
@@ -67,7 +71,7 @@ ul {
 .container-hd {
   display: flex;
   align-items: center;
-}
+} 
 
 .header-logo-begin {
   font-family: var(--secondary-font);
@@ -121,7 +125,14 @@ ul {
   padding: 0px;
 }
 
+.list-item-hd {
+  display: flex;
+  gap: 10px;
+}
+
 .link-hd {
+  display: flex;
+  gap: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -132,9 +143,29 @@ ul {
 }
 
 .link-hd:hover,
-.link-hd:focus,
-.link-hd.active {
+.link-hd:focus {
   color: var(--accent-txt-cl);
+  fill: var(--accent-txt-cl);
+} 
+
+.icon-envelope {
+  display: flex;
+  width: 16px;
+  height: 12px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--light-txt-cl);
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  display: flex;
+  width: 10px;
+  height: 16px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--light-txt-cl);
+  fill: currentColor;
 }
 
 /*Main Studio*/
@@ -151,7 +182,6 @@ ul {
   background-color: var(--team-color);
   border-radius: 4px;
 }
-
 
 .section-hero {
   padding-top: 200px;
@@ -176,7 +206,7 @@ ul {
   min-height: 50px;
   padding: 6px 28px;
   margin: auto;
-
+  border: none;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -212,6 +242,7 @@ ul {
 }
 
 .features-title {
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -241,7 +272,8 @@ ul {
 }
 
 .title-our-work,
-.title-our-team {
+.title-our-team,
+.title-clients {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -284,6 +316,8 @@ ul {
 }
 
 .socials {
+  margin-top: 16px;
+
   display: flex;
   list-style: none;
   padding-bottom: 0;
@@ -292,14 +326,14 @@ ul {
 }
 
 .social {
+  display: flex;
   width: 44px;
   height: 44px;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--white-txt-cl);
   border-radius: 50%;
-   fill: red; 
+  fill: #AFB1B8;
 }
 
 .social:hover,
@@ -309,16 +343,39 @@ ul {
 }
 
 .icon {
-  background-color: #2196f3;
   width: 20px;
-  height: 20px; 
+  height: 20px;
 }
 /*Постійні клієнти*/
 .section-clients {
-
 }
 
+.list-clients {
+display: flex;
+gap: 30px;
+}
 
+.link-client {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  background-color: var(--white-txt-cl);
+  fill: #AFB1B8;
+}
+
+.link-client:hover,
+.link-client:focus {
+fill: var(--accent-txt-cl);
+border: 1px solid var(--accent-txt-cl);
+}
+
+.icon-cl {
+  width: 106px;
+  height: 60px;
+}
 /*Portfolio*/
 .title-portfolio {
   margin-bottom: 4px;
@@ -341,7 +398,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
-
+  border: none;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -386,9 +443,15 @@ ul {
 
 /*Footer*/
 .footer {
+  display: flex;
+  gap: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--accent-bg-cl);
+}
+
+.container-ft {
+  padding-left: 600px;
 }
 
 .footer-logo-begin {
@@ -412,6 +475,10 @@ ul {
 
 .address {
   margin-top: 20px;
+  width: 231px;
+}
+.list-item-ft {
+  
 }
 
 .list-item-ft:not(:last-child) {
@@ -438,6 +505,47 @@ ul {
 .link-ft:focus,
 .link-ft.active {
   color: var(--accent-txt-cl);
+}
+
+.social-footer {
+
+}
+
+.title-social {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+}
+
+.list-social-ft {
+  display: flex;
+  gap: 10px;
+}
+
+.social-ft {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white-txt-cl);
+}
+
+.social-ft:hover,
+.social-ft:focus {
+  background-color: var(--accent-txt-cl);
+}
+
+.icon-ft {
+  width: 20px;
+  height: 20px;
 }
 
 /*Приховати заголовок в Наші переваги та Портфолио*/
