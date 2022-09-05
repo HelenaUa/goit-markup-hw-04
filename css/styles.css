@@ -132,6 +132,7 @@ ul {
 .link-hd {
   display: flex;
   gap: 10px;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -169,10 +170,6 @@ ul {
 
 /*Main Studio*/
 
-.bg-hero {
-  background-color: #C4C4C4;
-}
-
 .benefit-icon {
   width: 70px;
   height: 70px;
@@ -183,16 +180,13 @@ ul {
   justify-content: center;
   align-items: center;
   height: 120px;
-  background-color: var(--team-color);
+  background-color: var(--btn-cl);
   border-radius: 4px;
 }
 
 .section-hero {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,6 +256,7 @@ ul {
 }
 
 .list-sh {
+  background-color: var(--white-txt-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -345,6 +340,7 @@ ul {
   margin-top: 16px;
 
   display: flex;
+  gap: 10px;
   list-style: none;
   padding-bottom: 0;
   padding-left: 0;
@@ -388,6 +384,7 @@ ul {
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
   background-color: var(--white-txt-cl);
   fill: #afb1b8;
 }
@@ -405,7 +402,7 @@ ul {
 /*Portfolio*/
 .title-portfolio {
   margin-bottom: 4px;
-
+  color: var(--main-txt-cl);
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -470,26 +467,30 @@ ul {
 }
 
 .nav-link-p {
+  display: block;
   text-decoration: none;
 }
 
-.list-item-portfolio a:hover .project-card,
-.list-item-portfolio a:focus .project-card {
-background: #FFFFFF;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.nav-link-p:hover,
+.nav-link-p:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*Footer*/
 .footer {
-  display: flex;
-  gap: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--accent-bg-cl);
 }
 
 .container-ft {
-  padding-left: 600px;
+  margin-right: 70px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-begin {
@@ -513,8 +514,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 
 .address {
   margin-top: 20px;
-  width: 231px;
 }
+
 .list-item-ft {
 }
 
